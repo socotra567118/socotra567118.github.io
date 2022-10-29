@@ -1,5 +1,5 @@
 ---
 title: Shop
-layout: product
+layout: privacy
 permalink: /shop/
 ---
