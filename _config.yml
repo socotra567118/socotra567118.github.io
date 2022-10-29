@@ -17,7 +17,7 @@ urls:
     - text: Gallery
       url: /gallery
     - text: Privacy Policy
-      url : /privacy
+      url : /shop
     - text: Contact
       url : /contact
 
