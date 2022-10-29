@@ -1,5 +1,5 @@
 ---
-title: Shop
+title: Privacy Policy
 layout: privacy
-permalink: /shop/
+permalink: /privacy/
 ---
