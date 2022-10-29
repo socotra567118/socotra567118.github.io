@@ -52,7 +52,7 @@ author_work_experiences:
 author_education_details:
               - college_logo: seoultech.svg
                 college_name: Seoul National University of Science and Technology
-                college_url: https://mit.org
+                college_url: https://www.seoultech.ac.kr/
                 college_degree: Dept. of Mechanical System and Design Engineering
                 description: Third Year Student
                 visibility: true
