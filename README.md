@@ -1,194 +1,188 @@
+# Agency Jekyll Theme
+[![RubyGems Downloads](https://img.shields.io/gem/dt/jekyll-agency?label=gem%20downloads)](https://rubygems.org/gems/jekyll-agency)
+[![LICENSE](https://img.shields.io/badge/license-MIT-blue)](/LICENSE.txt)
+[![Tip Me via PayPal](https://img.shields.io/badge/PayPal-tip_me-green?logo=paypal)](https://www.paypal.me/raviriley)
+[![template button](https://img.shields.io/badge/Generate_theme_from_template-2ea44f)][generate]
+[![Featured on Jekyll-Themes.com](https://img.shields.io/badge/featured%20on-JekyllThemes-red.svg)](https://jekyll-themes.com/agency-jekyll-theme/)
+
+## Preview - click for live demo
+
+[![screenshot](/screenshot.PNG)][demo-page]
+
+## Warning
+
+> :warning: **Notice for those using legacy Formspree contact forms:** :warning:
+>
+> Email-based forms are being [phased out](https://help.formspree.io/hc/en-us/articles/360056076314) by Formspree. [#11](https://github.com/raviriley/agency-jekyll-theme/pull/11) updated this theme to use the [new Formspree structure](https://help.formspree.io/hc/en-us/articles/360017735154-How-to-prevent-spam). Click [here](https://help.formspree.io/hc/en-us/articles/360056076314) for instructions on updating your site's form.
+
+## About
+
+This is the [Agency Bootstrap theme](https://startbootstrap.com/themes/agency/), converted to a gem-based Jekyll theme with GitHub Pages support.
+
+While this has been done before, [here](https://github.com/y7kim/agency-jekyll-theme), [here](https://github.com/SotiriosVrachas/jekyll-theme-startbootstrap-agency), and [here](https://github.com/laklau/agency-jekyll-theme/), these are outdated and have not been updated or maintained for years. I built this theme from the most recent Bootstrap source.
+
+I also added a lot of new features that go beyond the original theme's capabilities:
+
+- GitHub Pages support
+- [template repo][template] to get up and running in minutes
+- contact form functionality powered by [Formspree.io](https://formspree.io)
+- multiple language support (currently English, Spanish, & German)
+- custom pages
+- 404 page
+- legal/Privacy Policy page
+- Google Analytics support
+- Markdown support
+- custom images
+- logo support (instead of just title text)
+- automatically updating copyright years
+- custom navigation bar, even without the header image(s)
+- customizable footer
+- custom accent color and dark/light colors
+- horizontal scrolling support for client section
+<!--
+- custom colors with automatic gradient generation (coming soon)
+- site title logo text font customization (coming soon)
+- horizontal scrolling support for portfolio section (coming soon)
+- about section (different from the timeline) -->
+
+The Jekyll structure of this theme includes:
+
+- `_portfolio` files - what generate the portfolio grid. YAML front matter handles all the details
+- the `page` layout allows custom pages, as seen in the legal and 404 pages
+- `sitetext.yml` enables complete customization of all site text
+- `navigation.yml` enables fully customizable navigation
+- `style.yml` enables fully customizable colors, background images, and other style-related things
+
+**If you enjoy this theme, please consider [supporting me](https://www.paypal.me/raviriley) to continue developing and maintaining it.**
+
 <div align="center">
-  <br>
 
-  <a href="https://github.com/jeffreytse/jekyll-theme-yat">
-    <img alt="jekyll-theme-yat →~ jekyll" src="https://user-images.githubusercontent.com/9413601/106478481-346fdf00-64e4-11eb-9385-1ab5329c3234.png" width="600">
-  </a>
-
-  <h1>🎨 JEKYLL YAT THEME 🎨</h1>
+[![Support via PayPal](https://cdn.rawgit.com/twolfson/paypal-github-button/1.0.0/dist/button.svg)](https://www.paypal.me/raviriley)
 
 </div>
 
-<h4 align="center">
-  <a href="https://jekyllrb.com/" target="_blank"><code>Jekyll</code></a> theme for elegant writers.
-</h4>
+## Installation
 
-<p align="center">
-  <a href="https://jeffreytse.github.io/jekyll-theme-yat">
-    <img src="https://github.com/jeffreytse/jekyll-theme-yat/workflows/Github%20Pages/badge.svg"
-      alt="Github Pages" />
-  </a>
+There are three ways to install this theme:
 
-  <a href="http://badge.fury.io/rb/jekyll-theme-yat">
-    <img src="https://badge.fury.io/rb/jekyll-theme-yat.svg"
-      alt="Gem Version" />
-  </a>
+1. As a gem-based theme
+2. Use the [starter template][template] (best for GitHub Pages)
+3. As a remote theme
 
-  <a href="https://opensource.org/licenses/MIT">
-    <img src="https://img.shields.io/badge/License-MIT-brightgreen.svg"
-      alt="License: MIT" />
-  </a>
+#### 1. Gem-based Theme Installation
 
-  <a href="https://liberapay.com/jeffreytse">
-    <img src="http://img.shields.io/liberapay/goal/jeffreytse.svg?logo=liberapay"
-      alt="Donate (Liberapay)" />
-  </a>
+Replace the contents of your `_config.yml` file with the sample [\_config.yml](https://raw.githubusercontent.com/raviriley/agency-jekyll-theme-starter/master/_config.yml).
 
-  <a href="https://patreon.com/jeffreytse">
-    <img src="https://img.shields.io/badge/support-patreon-F96854.svg?style=flat-square"
-      alt="Donate (Patreon)" />
-  </a>
+Install the gem with:
 
-  <a href="https://ko-fi.com/jeffreytse">
-  <img height="20" src="https://www.ko-fi.com/img/githubbutton_sm.svg"
-  alt="Donate (Ko-fi)" />
-  </a>
-</p>
+```sh
+$ bundle add jekyll-agency
+```
+
+Or manually.
+
+1. Add this line to your Jekyll site's `Gemfile`:
+   ```ruby
+   gem "jekyll-agency"
+   ```
+2. Then execute:
+   ```sh
+   $ bundle install
+   ```
+
+#### 2. Using the [Starter Template][template]
+
+This is the fastest and easiest way to get up and running on GitHub Pages.
+
+Simply generate your own repository by clicking the button below. Then replace the sample content with your own and configure for your needs.
 
 <div align="center">
-  <sub>Built with ❤︎ by
-  <a href="https://jeffreytse.net">jeffreytse</a> and
-  <a href="https://github.com/jeffreytse/jekyll-theme-yat/graphs/contributors">contributors </a>
+
+[![Use this template](https://img.shields.io/badge/Generate-Use_this_template-2ea44f?style=for-the-badge)][generate]
+
 </div>
+    
+#### 3. Remote Theme Installation
 
-<br>
+Replace your `_config.yml` file with the starter [\_config.yml](https://raw.githubusercontent.com/raviriley/agency-jekyll-theme-starter/master/_config.yml).
 
-Hey, nice to meet you, you found this [Jekyll][jekyll] theme. Here the
-**Yet Another Theme** is a modern responsive theme, and it's quiet clear,
-clean and neat for writers and posts. **If you like the theme, give it
-a star!**
+Replace your `Gemfile` with the starter [Gemfile](https://raw.githubusercontent.com/raviriley/agency-jekyll-theme-starter/master/Gemfile).
 
+Then install gems.
 
-<p align="center">
-
-  <img src="https://user-images.githubusercontent.com/9413601/91842897-6a840b00-ec87-11ea-95ca-52abcc1ac063.png" alt="demo-screenshot" width="780px"/>
-
-</p>
-
-<h3 align="center">🌌 Night Mode</h3>
-
-<p align="center">
-
-  <img src="https://user-images.githubusercontent.com/9413601/94983351-760f6e00-0574-11eb-9494-5303ad6228dc.gif" alt="demo-screenshot" width="780px"/>
-
-</p>
-
-## ✨ Features
-
-- Support beautiful __Night Mode__.
-- Modern responsive web design.
-- Full layouts `home`, `post`, `tags`, `archive` and `about`.
-- Uses font awesome 5 for icons.
-- Beautiful Syntax Highlight using [highlight.js][highlight-js].
-- RSS support using [Jekyll Feed][jekyll-feed] gem.
-- Optimized for search engines using [Jekyll Seo Tag][jekyll-seo-tag] gem.
-- Sitemap support using [Jekyll Sitemap][jekyll-sitemap] gem.
-- Complex and flexible table support using [Jekyll Spaceship][jekyll-spaceship] gem.
-- MathJAX and LaTeX optional support using [Jekyll Spaceship][jekyll-spaceship] gem.
-- Media (Youtube, Spotify, etc.) support using [Jekyll Spaceship][jekyll-spaceship] gem.
-- Diagram (PlantUML, Mermaid) support using [Jekyll Spaceship][jekyll-spaceship] gem.
-- Google Translation support.
-- New post tag support.
-
-Also, visit the [Live Demo][yat-live-demo] site for the theme.
-
-## 🛠️  Installation
-
-There are three ways to install:
-
-- As a [gem-based theme](https://jekyllrb.com/docs/themes/#understanding-gem-based-themes).
-- As a [remote theme](https://blog.github.com/2017-11-29-use-any-theme-with-github-pages/) (GitHub Pages compatible).
-- Forking/directly copying all of the theme files into your project.
-
-### Gem-based Theme Method
-
-Add this line to your Jekyll site's `Gemfile`:
-
-```ruby
-gem "jekyll-theme-yat"
+```sh
+$ bundle install
 ```
 
-And add this line to your Jekyll site's `_config.yml`:
+<!--
+## Documentation and Usage
 
-```yaml
-theme: jekyll-theme-yat
+**TODO:** Write usage instructions here. Describe available layouts, includes, or assets.
+
+navheader is used only for the home page. nav is used everywhere else.
+
+Layouts:
+
+Includes:
+
+-->
+
+## Contributing
+
+This project is intended to be a welcoming space for collaboration. If you have an idea, suggestion, feature request, etc., feel free to open an issue or pull request.
+
+For bug reports, follow the provided template.
+
+#### Improvements - Up for Grabs
+
+- [x] multiple language support thanks to [@rbenitezpagan](https://github.com/rbenitezpagan)
+  - [x] Spanish thanks to [@rbenitezpagan](https://github.com/rbenitezpagan)
+  - [x] German thanks to [@bkfirmen](https://github.com/bkfirmen)
+  - [ ] Chinese
+  - [ ] Arabic
+  - [ ] etc
+- [ ] customizable background coloring for each section
+
+## Development
+
+To set up your environment to develop this theme, clone this repo or your fork.
+
+```sh
+$ git clone https://github.com/raviriley/agency-jekyll-theme.git
+$ cd agency-jekyll-theme
 ```
 
-And then execute:
+Then run:
 
-```bash
-$ bundle
+```sh
+$ bundle install
 ```
 
-Or install it yourself as:
+To test the theme, run this. (Using the `--trace` flag for verbose errors.)
 
-```bash
-$ gem install jekyll-theme-yat
+```sh
+$ bundle exec jekyll serve --trace
 ```
 
-### Remote Theme Method with GitHub Pages
+Then open your browser at:
 
-Remote themes are similar to Gem-based themes, but do not require `Gemfile` changes or whitelisting making them ideal for sites hosted with GitHub Pages.
+- http://localhost:4000
 
-To install:
+Add pages, documents, data, etc. like normal to test the theme's contents. As you make modifications, your site will regenerate and you should see the changes in the browser after a refresh.
 
-Add this line to your Jekyll site's `Gemfile`:
+## License
 
-```ruby
-gem "github-pages", group: :jekyll_plugins
-```
+The theme is available as open source under the terms of the [MIT License](https://opensource.org/licenses/MIT).
 
-And add this line to your Jekyll site's `_config.yml`:
+<!--
 
-```yaml
-# theme: owner/name --> Don't forget to remove/comment the gem-based theme option
-remote_theme: "jeffreytse/jekyll-theme-yat"
-```
+## Example Implementations
 
-And then execute:
+- [CV Enterprises](https://cventerprises.org)
+- [Mortazavi Lab at UC Irvine](https://mortazavilab.github.io/)
 
-```bash
-$ bundle
-```
+-->
 
-### GitHub Pages without limitation
-
-GitHub Pages runs in `safe` mode and only allows [a set of whitelisted plugins/themes](https://pages.github.com/versions/). __In other words, the third-party gems will not work normally__.
-
-To use the third-party gem in GitHub Pages without limitation:
-
-Here is a GitHub Action named [jekyll-deploy-action](https://github.com/jeffreytse/jekyll-deploy-action) for Jekyll site deployment conveniently. 👍
-
-
-## 📚 Usage
-
-Add or update your available layouts, includes, sass and/or assets.
-
-## ✏️  Development
-
-To set up your environment to develop this theme, run `bundle install`.
-
-Your theme is setup just like a normal Jekyll site! To test your theme, run `bundle exec jekyll serve` and open your browser at `http://localhost:4000`. This starts a Jekyll server using your theme. Add pages, documents, data, etc. like normal to test your theme's contents. As you make modifications to your theme and to your content, your site will regenerate and you should see the changes in the browser after a refresh, just like normal.
-
-When your theme is released, only the files in `_data`, `_layouts`, `_includes`, `_sass` and `assets` tracked with Git will be bundled.
-To add a custom directory to your theme-gem, please edit the regexp in `jekyll-theme-yat.gemspec` accordingly.
-
-## 🔫 Contributing
-
-Issues and Pull Requests are greatly appreciated. If you've never contributed to an open source project before I'm more than happy to walk you through how to create a pull request.
-
-You can start by [opening an issue](https://github.com/jeffreytse/jekyll-theme-yat/issues/new) describing the problem that you're looking to resolve and we'll go from there.
-
-## 🌈 License
-
-This theme is licensed under the [MIT license](https://opensource.org/licenses/mit-license.php) © JeffreyTse.
-
-<!-- External links -->
-[jekyll]: https://jekyllrb.com/
-[yat-git-repo]: https://github.com/jeffreytse/jekyll-theme-yat/
-[yat-live-demo]: https://jeffreytse.github.io/jekyll-theme-yat/
-[jekyll-spaceship]: https://github.com/jeffreytse/jekyll-spaceship
-[jekyll-seo-tag]: https://github.com/jekyll/jekyll-seo-tag
-[jekyll-sitemap]: https://github.com/jekyll/jekyll-sitemap
-[jekyll-feed]: https://github.com/jekyll/jekyll-feed
-[highlight-js]: https://github.com/highlightjs/highlight.js
+[demo-page]: https://raviriley.github.io/agency-jekyll-theme-starter/
+[template]: https://github.com/raviriley/agency-jekyll-theme-starter
+[generate]: https://github.com/raviriley/agency-jekyll-theme-starter/generate
