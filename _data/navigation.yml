@@ -2,48 +2,32 @@
 main:
   - name: Home
     url: /
-    submenu:
-      - name: Home
-        url: /index.html
-      - name: Home 2
-        url: /index-2.html
-      - name: Home 3
-        url: /index-3.html
-      - name: Home 4
-        url: /index-4.html
-  - name: About
-    url: "#"
-    submenu:
-      - name: About
-        url: /about.html
-      - name: About Me
-        url: /about-me.html
+  - name: About me
+    url: /about-me.html
   - name: Blog
-    url: /blog-1.html
+    url: /blog.html
   - name: Pages
     url: /
     submenu:
       - name: Services
         url: /services.html
-      - name: Portfolio One
-        url: /portfolio-1.html
-      - name: Portfolio Two
-        url: /portfolio-2.html
-      - name: 404
-        url: /404
+      - name: iOS
+        url: /iOS.html
+      - name: Android
+        url: /android.html
+      - name: Others
+        url: /others.html
   - name: Contact
     url: /contact.html
 
 ########## footer menu ###############
 footer:
+  - name: About me
+    url: /about-me.html
+  - name: Blog
+    url: /blog.html
   - name: Services
     url: /services.html
-  - name: Portfolio One
-    url: /portfolio-1.html
-  - name: Portfolio Two
-    url: /portfolio-2.html
-  - name: Single Portfolio
-    url: /portfolio-single.html
   - name: Contact
     url: /contact.html
 

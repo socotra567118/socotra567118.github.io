@@ -12,7 +12,7 @@ logo_icon: "/assets/images/logo-b.png"
 # contact form action
 contact_form_action: "#" # works with https://fomrspree.io
 mailchimp_list: "https://themeix.us16.list-manage.com/subscribe/post?u=307862c135e4548eecf86f389&amp;id=342411fb35"
-footer_content: "I am a student living in Seoul, Korea. I am studing iOS, Android development, and UI/UX."
+footer_content: "I am a student living in Seoul, Korea. I am studing iOS, Android development, and UI/UX. <br>[사업자 등록번호] 729-42-00829 <br>[통신판매업 신고번호] 2022-서울양천-0270"
 copyright: "DaeheonKim. &copy; 2022 All Right Reserved"
 # page header default image
 cover_image: "/assets/images/bg/about-bg.jpg"

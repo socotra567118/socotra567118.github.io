@@ -1,0 +1,47 @@
+---
+layout: default
+header_image: "/assets/images/bg/about-bg.jpg"
+title: "Others"
+description: "간단한 프로젝트와 다른 항목에 속하지 않는 프로젝트, 프로그래밍 방법에 대해 소개합니다.<br>Introduces simple projects, projects that do not belong to other items, and programming methods."
+---
+
+{% include page_header.html %}
+<!-- Portfolio  Start -->
+<section class="section portfolio-2">
+	<div class="container">
+		<div class="row justify-content-center">
+			<div class="col-lg-10 text-center">
+				<span class="h5 text-color text-uppercase">
+					Others
+				</span>
+				<h3 class="mb-5 mt-2">A collection of other projects and programming methods</h3>
+			</div>
+		</div>
+
+    <div class="row align-items-center mb-5">
+      	<div class="col-12 text-center">
+	        <div class="btn-group btn-group-toggle " data-toggle="buttons">
+	          <label class="btn border-0 active">
+	            <input type="radio" name="shuffle-filter" value="others" checked="checked" />All Projects
+	          </label>
+              <label class="btn border-0">
+                <input type="radio" name="shuffle-filter" value="iOS_others" />iOS/Swift
+              </label>
+	          <label class="btn border-0">
+	            <input type="radio" name="shuffle-filter" value="android_others" />Android/Kotlin/JAVA
+	          </label>
+	          <label class="btn border-0">
+	            <input type="radio" name="shuffle-filter" value="python" />Python
+	          </label>
+	          <label class="btn border-0">
+	            <input type="radio" name="shuffle-filter" value="arduino" />Arduino
+	          </label>
+	        </div>
+      </div>
+    </div>		
+    <div class="row shuffle-wrapper portfolio-gallery">
+      {% include portfolio_loop.html %}
+    </div>
+	</div>
+</section>
+<!-- Portfolio  End -->

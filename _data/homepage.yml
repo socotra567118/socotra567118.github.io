@@ -1,6 +1,6 @@
 ################## Hero Area #######################
 hero_area:
-  title : "Design Studio"
+  title : "Socotra"
   image : "/assets/images/banner/banner-3.png"
   content : "Dolor sit amet consectetur elit sed do eiusmod tempor incididunt labore et dolore magna.<br>aliqua enim ad minim veniam quis."
   button:
@@ -13,16 +13,16 @@ services:
   enable : true
   bg_image : "/assets/images/bg/feature-bg.png"
   item:
-  - name : "Brand Design"
-    icon : "ti-ruler-pencil"
+  - name : "Android"
+    icon : "/assets/images/android.png"
     content : "Lorem ipsum dolor sit amet consectetur elit sed do eiusmod tempor incididunt labore et dolore magna."
     
-  - name : "Seo & Marketing"
-    icon : "ti-announcement"
+  - name : "iOS"
+    icon : "/assets/images/iOS.png"
     content : "Lorem ipsum dolor sit amet consectetur elit sed do eiusmod tempor incididunt labore et dolore magna."
     
-  - name : "Creative Design"
-    icon : "ti-palette"
+  - name : "UI/UX"
+    icon : "/assets/images/design.png"
     content : "Lorem ipsum dolor sit amet consectetur elit sed do eiusmod tempor incididunt labore et dolore magna."
 
 ################## About ###########################
