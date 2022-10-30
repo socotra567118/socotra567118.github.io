@@ -1,12 +1,55 @@
-# main links
+#Please use the main menu items under the "name"
 main:
-  - title: "Quick-Start Guide"
-    url: https://mmistakes.github.io/minimal-mistakes/docs/quick-start-guide/
-  # - title: "About"
-  #   url: https://mmistakes.github.io/minimal-mistakes/about/
-  # - title: "Sample Posts"
-  #   url: /year-archive/
-  # - title: "Sample Collections"
-  #   url: /collection-archive/
-  # - title: "Sitemap"
-  #   url: /sitemap/
+  - name: Home
+    url: /
+    submenu:
+      - name: Home
+        url: /index.html
+      - name: Home 2
+        url: /index-2.html
+      - name: Home 3
+        url: /index-3.html
+      - name: Home 4
+        url: /index-4.html
+  - name: About
+    url: "#"
+    submenu:
+      - name: About
+        url: /about.html
+      - name: About Me
+        url: /about-me.html
+  - name: Blog
+    url: /blog-1.html
+  - name: Pages
+    url: /
+    submenu:
+      - name: Services
+        url: /services.html
+      - name: Portfolio One
+        url: /portfolio-1.html
+      - name: Portfolio Two
+        url: /portfolio-2.html
+      - name: 404
+        url: /404
+  - name: Contact
+    url: /contact.html
+
+########## footer menu ###############
+footer:
+  - name: Services
+    url: /services.html
+  - name: Portfolio One
+    url: /portfolio-1.html
+  - name: Portfolio Two
+    url: /portfolio-2.html
+  - name: Single Portfolio
+    url: /portfolio-single.html
+  - name: Contact
+    url: /contact.html
+
+############## Bottom menu ###############
+bottom:
+  - name: Terms of Service
+    link: "#"
+  - name: Privacy Policy
+    link: "#"
