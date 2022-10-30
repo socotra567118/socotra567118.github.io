@@ -49,7 +49,7 @@ footer:
 
 ############## Bottom menu ###############
 bottom:
-  - name: Terms of Service
-    link: "#"
+#  - name: Terms of Service
+#    link: "#"
   - name: Privacy Policy
-    link: "#"
+    link: /privacy.html
