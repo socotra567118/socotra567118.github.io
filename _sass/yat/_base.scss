@@ -189,7 +189,15 @@ pre {
   @extend %clearfix;
 }
 
-
+.wrapperFlex {
+  max-width: $content-width;
+  margin: auto;
+  padding-right: $spacing-unit;
+  padding-left: $spacing-unit;
+  display: flex;
+  justify-content: space-between;
+  @extend %clearfix;
+}
 
 /**
  * Clearfix

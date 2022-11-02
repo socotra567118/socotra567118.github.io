@@ -131,9 +131,9 @@ lang: "ko-KR"  # default lang is en
 # this and add the path to the pages in order as they should show up
 header_pages:
   - index.html
-  - archives.html
+  - android.html
+  - iOS.html
   - categories.html
-  - tags.html
   - about.html
   - privacy.html
 
