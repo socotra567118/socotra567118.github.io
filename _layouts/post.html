@@ -1,68 +1,77 @@
 ---
-layout: default_2
+layout: framework
+banner:
+banner_html: post-header.html
+hidden: []
+sidebar:
+  - article-menu
 ---
 
-<section class="section">
-	<div class="container">
-		<div class="row">
-			<div class="col-lg-12">
-	<div class="blog-single mb-5">
-		<div class="row justify-content-center">
-			<div class="col-lg-8">
-				<h3 class="mt-4 mb-2">{{page.title}}</h3>
-				<div class="post-meta text-uppercase mb-3">
-					<span class="text-color"> {{page.author}}</span>
-					<span class="text-color">/ {{page.date | date_to_long_string}}</span>
-				</div>
-				<p>{{page.excerpt | strip_html | truncatewords: "25"}}</p>
-			</div>
-		</div>
-        {% if page.post_image %}
-		<div class="blog-img position-relative mt-5 mb-5">
-			<img src="{{page.post_image | relative_url}}" alt="{{post.title}}" class="img-fluid w-100"/>
-		</div>
-        {% endif %}
-		<div class="row justify-content-center">
-			<div class="col-lg-10 mx-auto">
-				<div class="post-content">
-					{{page.content}}
-				</div>
-				<div class="row align-items-center my-5">
-					<div class="col-lg-6">
-						<div class="list-inline post-tags">
-						<div class="list-inline-item"><h5>Tags:</h5></div>
-                         {{page | tags | capitalize | replace: " ","  "}}
-						</div>
-					</div>
-					<div class="col-lg-6">
-                      {% include social_share.html %}
-					</div>
-				</div>
-				<div class="comment-form p-3 p-lg-5" >
-					<div id="disqus_thread"></div>
-                    {% include disqus_comments.html %}
-				</div>
-			</div>
-		</div>
-	</div>
-</div>	
+<div class="post">
+  <section>
 
-		</div>
-	</div>
-</section>
+    {%- assign name = 'banner' -%}
+    {%- include functions.html func='get_value' -%}
+    {%- assign banner = return -%}
 
-<!-- Call To action -->
-<section class="position-relative section-sm bg-extra">
-	<img src="{{'/assets/images/bg/cta-bg-2.png' | relative_url}}" alt="" class="overlay-shape">
-	<div class="container">
-		<div class="row align-items-center">
-			<div class="col-lg-9 mb-5 mb-lg-0">
-				<h2 class="text-white mb-0">dizer give the smart solution for your business</h2>
-			</div>
-			<div class="col-lg-3">
-				<a href="contact.html" class="btn btn-primary">get a quote</a>	
-			</div>
-		</div>
-	</div>
-</section>
-<!-- Call To action -->
+    {%- assign name = 'hidden' -%}
+    {%- include functions.html func='get_value' -%}
+    {%- assign hidden = return -%}
+
+    {%- assign result = hidden | where_exp: "item", "item == 'header'" -%}
+    {%- if banner == nil and result.size == 0 -%}
+    {%- include views/post-header.html -%}
+    {%- endif -%}
+
+    {%- include views/article.html -%}
+
+    {%- assign result = hidden | where_exp: "item", "item == 'navigator'" -%}
+    {%- if result.size == 0 -%}
+    <div class="post-nav">
+      {%- if page.previous -%}
+        <a class="previous" href="{{ page.previous.url | relative_url }}" title="{{
+          page.previous.title | escape }}">{{ page.previous.title | escape | truncatewords: 6 }}</a>
+      {%- else -%}
+      <span></span>
+      {%- endif -%}
+
+      {%- if page.next -%}
+        <a class="next" href="{{ page.next.url | relative_url }}" title="{{ page.next.title | escape }}">{{ page.next.title | escape | truncatewords: 6 }}</a>
+      {%- else -%}
+      <span></span>
+      {%- endif -%}
+    </div>
+    {%- endif -%}
+
+    {%- assign result = hidden | where_exp: "item", "item == 'related_posts'" -%}
+    {%- if result.size == 0 -%}
+    <div class="post-related">
+      <div>Related Articles</div>
+      <ul>
+        {% assign posts = site[page.collection] | sample:4 %}
+        {%- for post in posts -%}
+        <li><a class="post-link" href="{{post.url | relative_url}}" title="{{ page.next.title | escape }}">{{ post.title | escape | truncatewords: 12 }}</a></li>
+        {%- endfor -%}
+      </ul>
+    </div>
+    {%- endif -%}
+
+    {%- assign result = hidden | where_exp: "item", "item == 'comments'" -%}
+    {%- if result.size == 0 -%}
+    <div class="post-comments">
+      {%- if page.comments != false -%}
+
+      {%- if site.disqus.shortname -%}
+      {%- include extensions/comments/disqus.html -%}
+      {%- endif -%}
+
+      {%- if site.gitment.username -%}
+      {%- include extensions/comments/gitment.html -%}
+      {%- endif -%}
+
+      {%- endif -%}
+    </div>
+    {%- endif -%}
+
+  </section>
+</div>
