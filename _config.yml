@@ -133,6 +133,7 @@ header_pages:
   - index.html
   - android.html
   - iOS.html
+  - others.html
   - categories.html
   - about.html
   - privacy.html
