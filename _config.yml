@@ -132,7 +132,6 @@ lang: "ko-KR"  # default lang is en
 header_pages:
   - index.html
   - blog.html
-  - archives.html
   - tags.html
   - about.html
   - privacy.html
