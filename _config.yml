@@ -117,7 +117,7 @@ lang: "ko-KR"  # default lang is en
 # it will be always kept on every visit (i.e. no matter
 # the browser is closed or not)
 #
-# night_mode: "auto"
+night_mode: "manual"
 
 # Code badge setting
 # You can enable or disable the code badge and so on
@@ -131,10 +131,9 @@ lang: "ko-KR"  # default lang is en
 # this and add the path to the pages in order as they should show up
 header_pages:
   - index.html
+  - services.html
   - blog.html
-  - tags.html
   - about.html
-  - privacy.html
 
 # Page default value
 # defaults:
