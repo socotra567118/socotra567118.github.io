@@ -5,6 +5,7 @@ author: socotra
 categories: Swift
 tags: Swift
 permalink: '/swift/flagkit'
+published: false
 ---
 
 ## 시작하기
