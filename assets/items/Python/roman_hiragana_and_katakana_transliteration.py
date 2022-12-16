@@ -1,0 +1,1 @@
+roman_to_hiragana = ["a"]
