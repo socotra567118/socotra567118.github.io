@@ -2,6 +2,7 @@ const upper_cyrillic_to_upper_roman_dictionary = {"А": "A", "Б": "B", "В": "V
 
 const lower_cyrillic_to_upper_roman_dictionary = {'а': 'a', 'б': 'b', 'в': 'v', 'г': 'g', 'д': 'd', 'е': 'e', 'ё': 'yo', 'ж': 'zh', 'з': 'z', 'и': 'i', 'й': 'j', 'к': 'k', 'л': 'l', 'м': 'm', 'н': 'n', 'о': 'o', 'п': 'п', 'р': 'r', 'с': 'c', 'т': 't', 'у': 'u', 'ф': 'f', 'х': 'kh', 'ц': 'cz', 'ч': 'ch', 'ш': 'sh', 'щ': 'shh', 'ъ': '', 'ы': 'y', 'ь': '', 'э': 'e', 'ю': 'yu', 'я': 'ya', 'ѓ': 'g', 'ґ': 'g', 'є': 'ye', 's': 'z', 'ј': 'j', 'ї': 'yi', 'ќ': 'k', 'љ': 'l', 'њ': 'n', 'ў': 'u', 'џ': 'dh'}
 
-function cyrillic_to_roman() {
+window.onload = function cyrillic_to_roman() {
     const testBox = document.getElementById("from");
+    console.log("test");
 }
