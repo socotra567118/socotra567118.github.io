@@ -2,11 +2,42 @@ const upper_cyrillic_to_upper_roman_dictionary = {"А": "A", "Б": "B", "В": "V
 
 const lower_cyrillic_to_upper_roman_dictionary = {'а': 'a', 'б': 'b', 'в': 'v', 'г': 'g', 'д': 'd', 'е': 'e', 'ё': 'yo', 'ж': 'zh', 'з': 'z', 'и': 'i', 'й': 'j', 'к': 'k', 'л': 'l', 'м': 'm', 'н': 'n', 'о': 'o', 'п': 'p', 'р': 'r', 'с': 'c', 'т': 't', 'у': 'u', 'ф': 'f', 'х': 'kh', 'ц': 'cz', 'ч': 'ch', 'ш': 'sh', 'щ': 'shh', 'ъ': '', 'ы': 'y', 'ь': '', 'э': 'e', 'ю': 'yu', 'я': 'ya', 'ѓ': 'g', 'ґ': 'g', 'є': 'ye', 's': 'z', 'ј': 'j', 'ї': 'yi', 'ќ': 'k', 'љ': 'l', 'њ': 'n', 'ў': 'u', 'џ': 'dh'}
 
+const upper_cyrillic_to_upper_roman_dictionary_keys = Object.keys(upper_cyrillic_to_upper_roman_dictionary);
+const lower_cyrillic_to_upper_roman_dictionary_keys = Object.keys(lower_cyrillic_to_upper_roman_dictionary);
+
 var change = document.getElementById('change');             // 바꾸기 버튼 변수
 var clear = document.getElementById('clear');               // 지우기 버튼 변수
 var copy = document.getElementById('copy');                 // 복사하기 버튼 변수
 var isFromRoman = document.getElementById("isFromRoman")    // 로마자→키릴문자 체크박스 변수
 var isToRoman = document.getElementById("isToRoman")        // 키릴문자→로마자 체크박스 변수
+var cyrillicToRoman = document.getElementById("cyrillic_to_roman")  // 키릴문자→로마자 변환표 테이블
+
+// 변환표 추가
+// 키릴문자→로마자
+// 키릴문자 갯수가 하드코딩되어 있지만 갯수가 변하지 않으므로 문제는 안 될 듯
+for (let i = 0; i < 44; i+=2) {
+    const tr = cyrillicToRoman.insertRow();
+
+    const td1 = tr.insertCell(0);
+    const td2 = tr.insertCell(1);
+    const td3 = tr.insertCell(2);
+    const td4 = tr.insertCell(3);
+    const td5 = tr.insertCell(4);
+    const td6 = tr.insertCell(5);
+    const td7 = tr.insertCell(6);
+    const td8 = tr.insertCell(7);
+
+    td1.innerText = upper_cyrillic_to_upper_roman_dictionary_keys[i];
+    td2.innerText = upper_cyrillic_to_upper_roman_dictionary[upper_cyrillic_to_upper_roman_dictionary_keys[i]];
+    td3.innerText = upper_cyrillic_to_upper_roman_dictionary_keys[i + 1];
+    td4.innerText = (upper_cyrillic_to_upper_roman_dictionary[upper_cyrillic_to_upper_roman_dictionary_keys[i + 1]] === "") ? "-" : upper_cyrillic_to_upper_roman_dictionary[upper_cyrillic_to_upper_roman_dictionary_keys[i + 1]];
+    td5.innerText = lower_cyrillic_to_upper_roman_dictionary_keys[i];
+    td6.innerText = lower_cyrillic_to_upper_roman_dictionary[lower_cyrillic_to_upper_roman_dictionary_keys[i]];
+    td7.innerText = lower_cyrillic_to_upper_roman_dictionary_keys[i + 1];
+    td8.innerText = (lower_cyrillic_to_upper_roman_dictionary[lower_cyrillic_to_upper_roman_dictionary_keys[i + 1]] === "") ? "-" : lower_cyrillic_to_upper_roman_dictionary[lower_cyrillic_to_upper_roman_dictionary_keys[i + 1]];
+
+    console.log(upper_cyrillic_to_upper_roman_dictionary_keys[i]);
+}
 
 // 로마자-키릴문자 변환
 change.addEventListener('click', function(){
