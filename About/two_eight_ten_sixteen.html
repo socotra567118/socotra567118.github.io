@@ -4,13 +4,29 @@ title: About
 permalink: '/two_eight_ten_sixteen'
 ---
 <head>
-    <link rel="stylesheet" href="../assets/css/transliteration_css.css"/>
+    <link rel="stylesheet" href="../assets/css/decimal_changer_css.css"/>
 </head>
 <h2>2진수, 8진수, 10진수, 16진수 변환기</h2>
-<p>
-    
-</p>
 <body>
+    <p>
+        <div>
+            <select id="from_value" >
+                <option value="0">2진수</option>
+                <option value="1">8진수</option>
+                <option value="2" selected>10진수</option>
+                <option value="3">16진수</option>
+            </select>
+            에서 
+            <select id="to_value">
+                <option value="0">2진수</option>
+                <option value="1">8진수</option>
+                <option value="2">10진수</option>
+                <option value="3" selected>16진수</option>
+            </select>
+            로
+        </div>
+        <br>
+    </p>
     <textarea class="decimal_changer" type="text" id="from" value="" placeholder="입력"></textarea>
     <br>
     <br>
