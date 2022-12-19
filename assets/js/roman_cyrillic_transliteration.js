@@ -2,7 +2,14 @@ const upper_cyrillic_to_upper_roman_dictionary = {"А": "A", "Б": "B", "В": "V
 
 const lower_cyrillic_to_upper_roman_dictionary = {'а': 'a', 'б': 'b', 'в': 'v', 'г': 'g', 'д': 'd', 'е': 'e', 'ё': 'yo', 'ж': 'zh', 'з': 'z', 'и': 'i', 'й': 'j', 'к': 'k', 'л': 'l', 'м': 'm', 'н': 'n', 'о': 'o', 'п': 'п', 'р': 'r', 'с': 'c', 'т': 't', 'у': 'u', 'ф': 'f', 'х': 'kh', 'ц': 'cz', 'ч': 'ch', 'ш': 'sh', 'щ': 'shh', 'ъ': '', 'ы': 'y', 'ь': '', 'э': 'e', 'ю': 'yu', 'я': 'ya', 'ѓ': 'g', 'ґ': 'g', 'є': 'ye', 's': 'z', 'ј': 'j', 'ї': 'yi', 'ќ': 'k', 'љ': 'l', 'њ': 'n', 'ў': 'u', 'џ': 'dh'}
 
-var change = document.getElementById('change');
+const if_the_language_is_bulgarian_upper_to_upper_roman = {"Ъ": "A"}
+const if_the_language_is_bulgarian_lower_to_lower_roman = {"ъ": "a"}
+
+var change = document.getElementById('change');             // 바꾸기 버튼 변수
+var clear = document.getElementById('clear');               // 지우기 버튼 변수
+var copy = document.getElementById('copy');                 // 복사하기 버튼 변수
+
+// 로마자-키릴문자 변환
 change.addEventListener('click', function(){
     const textBox = document.getElementById("from").value;  // 사용자가 입력한 값 가져오기
     const splitedTextBox = textBox.split("");               // 사용자가 입력한 값 알파벳 단위로 분해하기
@@ -29,4 +36,22 @@ change.addEventListener('click', function(){
     }
 
     document.getElementById("to").value = changedValue;
+})
+
+// 입력 내용 지우기
+clear.addEventListener('click', function() {
+    document.getElementById("from").value = "";
+    document.getElementById("to").value = "";
+})
+
+// 클립보드 복사
+copy.addEventListener('click', function() {
+    const textBox = document.getElementById("to").value;
+
+    navigator.clipboard.writeText(textBox)
+        .then(() => {
+    })
+        .catch(err => {
+        console.log('Something went wrong', err);
+    })
 })
