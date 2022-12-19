@@ -10,14 +10,20 @@ change.addEventListener('click', function(){
 
     // 루프 돌면서 문자열에 변경된 값 담기
     for (const alphabet of splitedTextBox) {
-        if (alphabet === alphabet.toUpperCase()) {
-            // 대문자라면 대문자로
-            changedValue += upper_cyrillic_to_upper_roman_dictionary[alphabet];
-        } else if (alphabet === alphabet.toLowerCase()) {
-            // 소문자라면 소문자로
-            changedValue += lower_cyrillic_to_upper_roman_dictionary[alphabet];
+        const alphabetUnicode = alphabet.charCodeAt(0);     // 유니코드로 변환
+
+        // 키릴문자 범위 안에 있는지 확인
+        if ((alphabetUnicode >= 1024) && (alphabetUnicode <= 1279)) {
+            // 키릴문자면
+            if (alphabet === alphabet.toUpperCase()) {
+                // 대문자라면 대문자로
+                changedValue += upper_cyrillic_to_upper_roman_dictionary[alphabet];
+            } else if (alphabet === alphabet.toLowerCase()) {
+                // 소문자라면 소문자로
+                changedValue += lower_cyrillic_to_upper_roman_dictionary[alphabet];
+            } 
         } else {
-            // 대문자, 소문자도 아니면 똑같이 출력
+            // 키릴문자가 아니면 똑같이 출력
             changedValue += alphabet;
         }
     }
