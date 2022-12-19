@@ -1,6 +1,6 @@
 ---
 layout: about
-title: About
+title: Roman-Cyrillic Transliterator
 permalink: '/roman_cyrillic'
 ---
 <head>
@@ -9,17 +9,21 @@ permalink: '/roman_cyrillic'
 <h2>로마자-키릴문자 변환기</h2>
 <p>
     ГОСТ GOST 16876-71을 따랐으며, 일부는 ALA-LC, BGN/PCGN을 따름
+    <br>
+    <br>
+    <input type="checkbox" id="isFromRoman" name="isFromRoman" value="true"> 로마자→키릴문자
+    <input type="checkbox" id="isToRoman" name="isToRoman" value="false" checked> 키릴문자→로마자
 </p>
 <body>
     <textarea class="main_text_field" type="text" id="from" value=""></textarea>
     <br>
-    <input type="button" id="clear" value="지우기">
-    <input type="button" id="change" value="바꾸기">
+    <input class="submit_button" type="button" id="clear" value="지우기">
+    <input class="submit_button" type="button" id="change" value="바꾸기">
 
     <br>
     <br>
     <textarea class="main_text_field" type="text" id="to" value="" readonly></textarea>
-    <input type="button" id="copy" value="복사하기">
+    <input class="submit_button" type="button" id="copy" value="복사하기">
 
     <script src="../assets/js/roman_cyrillic_transliteration.js"></script>
 </body>
