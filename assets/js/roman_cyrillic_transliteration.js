@@ -10,15 +10,15 @@ change.addEventListener('click', function(){
 
     // 루프 돌면서 문자열에 변경된 값 담기
     for (const alphabet of splitedTextBox) {
-        if (alphabet === " ") {
-            // 공란이면 똑같이 공란으로
-            changedValue += " ";
-        } else if (alphabet === alphabet.toUpperCase()) {
+        if (alphabet === alphabet.toUpperCase()) {
             // 대문자라면 대문자로
             changedValue += upper_cyrillic_to_upper_roman_dictionary[alphabet];
         } else if (alphabet === alphabet.toLowerCase()) {
             // 소문자라면 소문자로
             changedValue += lower_cyrillic_to_upper_roman_dictionary[alphabet];
+        } else {
+            // 대문자, 소문자도 아니면 똑같이 출력
+            changedValue += alphabet;
         }
     }
 
