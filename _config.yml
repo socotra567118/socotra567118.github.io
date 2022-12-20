@@ -133,7 +133,7 @@ header_pages:
   - index.html
   - services.html
   - blog.html
-  - others.html
+  - tools.html
   - about.html
 
 # Page default value
