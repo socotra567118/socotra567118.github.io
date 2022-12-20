@@ -27,6 +27,15 @@ for (let i = 0; i < 44; i+=2) {
     const td7 = tr.insertCell(6);
     const td8 = tr.insertCell(7);
 
+    td1.setAttribute("style", "text-align:center");
+    td2.setAttribute("style", "text-align:center");
+    td3.setAttribute("style", "text-align:center");
+    td4.setAttribute("style", "text-align:center");
+    td5.setAttribute("style", "text-align:center");
+    td6.setAttribute("style", "text-align:center");
+    td7.setAttribute("style", "text-align:center");
+    td8.setAttribute("style", "text-align:center");
+
     td1.innerText = upper_cyrillic_to_upper_roman_dictionary_keys[i];
     td2.innerText = upper_cyrillic_to_upper_roman_dictionary[upper_cyrillic_to_upper_roman_dictionary_keys[i]];
     td3.innerText = upper_cyrillic_to_upper_roman_dictionary_keys[i + 1];
