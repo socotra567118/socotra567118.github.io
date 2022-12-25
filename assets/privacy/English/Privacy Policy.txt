@@ -1,0 +1,66 @@
+# PravacyPolicy
+<Socotra> ("https://github.com/muheonkom567118' hereinafter referred to as "Socotra") establishes and discloses the following personal information processing policy in order to protect the personal information of the data subject and to quickly and smoothly handle related difficulties under Article 30 of the Personal Information Protection Act.
+
+○ This personal information processing policy will be applied from February 23, 2022. ○ If there is something different from the Korean version, follow the Korean version.
+
+Article 1 (Purpose of processing personal information)
+< Socotra> ('https://github.com/muheonkom567118' or 'Socotra') does not store personal information.
+6. Other
+Do not save your personal information.
+
+Article 2 (Processing and Retention Period of Personal Information)
+① <Socotra> processes and holds personal information within the period of holding and using personal information under the Act or the period of holding and using personal information agreed upon when collecting personal information from the information subject.
+② Each personal information processing and retention period is as follows.
+1.<Other>
+Personal information related to <Other> is not saved.
+
+Article 3 (Rights and obligations of the information subject and legal representative and the method of exercise thereof)
+① The information subject may exercise the right to Socotra at any time, such as requesting access, correction, deletion, and suspension of processing of personal information.
+② The exercise of rights under paragraph (1) may be conducted in writing, e-mail, or fax pursuant to Article 41 (1) of the Enforcement Decree of the Personal Information Protection Act, and Socotra will take action without delay.
+③ The exercise of rights under paragraph (1) may be conducted through a legal representative of the data subject or an agent, such as a delegated person.In such cases, "Public notice on the processing method of personal information (No. 2020-7)" You must submit a power of attorney in accordance with attached Form 11.
+④ The rights of the data subject may be limited pursuant to Articles 35 (4) and 37 (2) of the Personal Information Protection Act for the requesting suspension of personal information access and processing.
+⑤ A request for correction and deletion of personal information cannot be requested to delete personal information if it is specified in other laws and regulations.
+⑥ Socotra checks whether the person who made the request, such as request for perusal, correction or deletion according to the right of the data subject, or perusal, when requesting suspension of processing, is himself or a legitimate agent.
+
+Article 4 (Preparation of items of personal information to be processed) 
+① <Socotra> does not process privacy entries.
+
+Article 5 (Destruction of personal information)
+① <Socotra> does not store personal information.
+
+Article 6 (Measures to ensure the safety of personal information)
+<Socotra> is taking the following steps to ensure the safety of personal information.
+1. Conduct regular self-audit
+In order to ensure stability related to personal information handling, self-audit is conducted regularly (once a quarter).
+2. Minimize and train personnel handling personal information
+We are implementing measures to manage personal information by designating employees who handle personal information and minimizing them by limiting them to those in charge.
+
+Article 7 (Matters concerning the installation, operation, and rejection of an automatic personal information collection device)
+Socotra does not use 'cookie' that stores information about the information subject and reads it from time to time.
+
+Article 8 (Personal Information Protection Officer)
+① Socotra is in charge of handling personal information, and designates a person in charge of personal information protection as follows to handle complaints and remedy damages of information subjects related to personal information processing.
+▶ Person in charge of personal information protection
+Name: Kim Dae-heon
+Contact: socotra567118@gmail.com
+※ You will be directed to the Privacy Department.
+② The information subject can contact the person in charge of personal information protection and the department in charge of personal information protection, handling complaints, and relief of damage caused by using Socotra's service (or business). Socotra will respond and process inquiries from information agents without delay.
+
+Article 9 (Request for access to personal information)
+The information subject may request the following departments to view personal information under Article 35 of the Personal Information Protection Act.
+<Socotra> will try to expedite the request for access to personal information by the information subject.
+▶ Personal information access request reception and processing department
+Name: Kim Dae-heon
+Contact: socotra567118@gmail.com
+
+Article 10 (Method of remedy for infringement of rights)
+In order to receive relief from personal information infringement, the information subject may apply for dispute resolution or consultation with the Personal Information Dispute Mediation Committee and the Korea Internet & Security Agency's Personal Information Infringement Report Center. In addition, please contact the institution below for reports and counseling of other personal information violations.
+1. Personal Information Dispute Mediation Committee: (Without National Number) 1833-6972 (www.kopico.go.kr)
+2. Personal Information Infringement Report Center: 118 (privacy.kisa.or.kr)
+3. Supreme Prosecutors' Office: 1301 (www.spo.go.kr)
+4. National Police Agency: 182 (ecrm.cyber.go.kr)
+A person who has been infringed on rights or interests due to disposition or omission by the head of a public institution may request an administrative trial as prescribed by the Administrative Appeals Act for requests under Articles 35 (View of Personal Information), 36 (Correction/Delete of Personal Information, etc.).
+※ For more information on administrative trials, please refer to the website of the Central Administrative Appeals Commission (www.simpan.go.kr).
+
+Article 11 (Change of Personal Information Processing Policy)
+① This personal information processing policy will be applied from February 23, 2022.
