@@ -5,8 +5,6 @@ html, body {
 body {
     display: flex;
     flex-direction: column;
-    text-align: center;
-    margin: 0;
 }
 
 main {
