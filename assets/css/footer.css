@@ -1,8 +1,3 @@
-.social-icons {
-    display: block;
-}
-
-.social-icons i {
-    color: white;
-    padding: 0 15px 0 0;
+.text-color a {
+    color: gray;
 }
