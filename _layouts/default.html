@@ -8,12 +8,14 @@
     {%- include views/header.html -%}
 
     <!-- 메인 -->
-    {{ content }}
+    <main aria-label="Content">
+      {{ content }}
+    </main>
 
     <!-- Footer -->
     {%- include views/footer.html -%}
 
     <!-- Bootstrap -->
     {%- include bootstrap.html -%}
-</body>
+  </body>
 </html>
