@@ -1,7 +1,6 @@
 <header role="banner">
     <nav class="navbar navbar-expand-lg bg-dark">
         <div class="container-fluid">
-            <a class="navbar-brand text-white" href="/">Socotra</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" style="border-color: transparent;">
               <span class="navbar-toggler-icon">   
                 <i class="fas fa-bars" style="color:#fff; font-size:28px;"></i>
@@ -9,19 +8,20 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <!-- 이 부분을 삭제해야 하지만 삭제하면 망가짐 -->
-                <ul class="me-auto"></ul>
-                <ul class="navbar-nav nav mb-2 mb-lg-0 justify-content-end"  style="padding-right: 8px;">
-                    <li class="nav-item">
+                <ul class="navbar-nav nav mb-2 mb-lg-0  me-auto">
+                    <li class="nav-item" style="padding-right: 12px;">
                         <!-- 홈 바로가기 -->
-                        <a class="nav-link active text-white" aria-current="page" href="/">Home</a>
+                        <a class="nav-link active text-white" aria-current="page" href="/"><i class="fa-solid fa-house"></i></a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link active text-white" href="/blog">Blog</a>
+                        <a class="nav-link active text-white" href="/blog">
+                            <i class="fas fa-book" style="padding-right: 4px;"></i> Blog
+                        </a>
                     </li>
                     <li class="nav-item dropdown">
                         <!-- 드롭다운 도구 모음 -->
                         <a class="nav-link dropdown-toggle active text-white" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                            Tools
+                            <i class="fa-solid fa-wrench" style="padding-right: 4px;"></i> Tools
                         </a>
                         <ul class="dropdown-menu">
                             <li><a class="dropdown-item" href="#">Action</a></li>
@@ -34,7 +34,9 @@
                     </li>
                     <li class="nav-item">
                         <!-- About 페이지 -->
-                        <a class="nav-link active text-white" href="/about">About</a>
+                        <a class="nav-link active text-white" href="/about">
+                            <i class="fa-solid fa-user" style="padding-right: 4px;"></i> About
+                        </a>
                     </li>
                 </ul>
   

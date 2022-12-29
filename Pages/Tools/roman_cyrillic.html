@@ -1,0 +1,67 @@
+---
+layout: default
+title: Roman-Cyrillic Transliterator
+permalink: '/tools/roman_cyrillic'
+---
+<head>
+    <link rel="stylesheet" href="../assets/css/transliteration_css.css"/>
+</head>
+<body>
+    <h2>로마자-키릴문자 변환기</h2>
+    <p>
+        ГОСТ GOST 16876-71을 따랐으며, 일부는 ALA-LC, BGN/PCGN을 따름
+        <br>
+        <br>
+        <input type="checkbox" id="isFromRoman" name="isFromRoman" value="true"> 로마자→키릴문자
+        <input type="checkbox" id="isToRoman" name="isToRoman" value="false" checked> 키릴문자→로마자
+    </p>
+    <textarea class="main_text_field" type="text" id="from" value=""></textarea>
+    <br>
+    <input class="submit_button" type="button" id="clear" value="지우기">
+    <input class="submit_button" type="button" id="change" value="바꾸기">
+
+    <br>
+    <br>
+    <textarea class="main_text_field" type="text" id="to" value="" readonly></textarea>
+    <br>
+    <input class="submit_button" type="button" id="copy" value="복사하기">
+    <br>
+
+    <div>
+        <h2>로마자→키릴문자 변환표</h2>
+        <div>
+            <table class="main_table">
+                <tr>
+                    <td>로마자</td>
+                    <td>키릴문자</td>
+                    <td>로마자</td>
+                    <td>키릴문자</td>
+                    <td>로마자</td>
+                    <td>키릴문자</td>
+                    <td>로마자</td>
+                    <td>키릴문자</td>
+                </tr>
+            </table>
+        </div>
+        <h2>키릴문자→로마자 변환표</h2>
+        <div>
+            <table class="main_table" id="cyrillic_to_roman" style="margin-left:auto; margin-right:auto;">
+                <tr>
+                    <td style="text-align:center">키릴문자</td>
+                    <td style="text-align:center">로마자</td>
+                    <td style="text-align:center">키릴문자</td>
+                    <td style="text-align:center">로마자</td>
+                    <td style="text-align:center">키릴문자</td>
+                    <td style="text-align:center">로마자</td>
+                    <td style="text-align:center">키릴문자</td>
+                    <td style="text-align:center">로마자</td>
+                </tr>
+            </table>
+        </div>
+        <div>
+            
+        </div>
+    </div>
+
+    <script src="../assets/js/roman_cyrillic_transliteration.js"></script>
+</body>
