@@ -18,34 +18,39 @@ var cyrillicToRoman = document.getElementById("cyrillic_to_roman")  // 키릴문
 for (let i = 0; i < 44; i+=2) {
     const tr = cyrillicToRoman.insertRow();
 
+    // 첫 번째 행
+    let first_upper_cyrillic_letter = upper_cyrillic_to_upper_roman_dictionary_keys[i];
+    let first_upper_roman_letter = upper_cyrillic_to_upper_roman_dictionary[upper_cyrillic_to_upper_roman_dictionary_keys[i]];
+
+    // 두 번째 행
+    let second_upper_cyrillic_letter = upper_cyrillic_to_upper_roman_dictionary_keys[i + 1];
+    let second_upper_roman_letter = (upper_cyrillic_to_upper_roman_dictionary[upper_cyrillic_to_upper_roman_dictionary_keys[i + 1]] === "") ? "없음" : upper_cyrillic_to_upper_roman_dictionary[upper_cyrillic_to_upper_roman_dictionary_keys[i + 1]]
+
+    // 세 번째 행
+    let first_lower_cyrillic_letter = lower_cyrillic_to_upper_roman_dictionary_keys[i];
+    let first_lower_roman_letter = lower_cyrillic_to_upper_roman_dictionary[lower_cyrillic_to_upper_roman_dictionary_keys[i]];
+
+    // 네 번째 행
+    let second_lower_cyrillic_letter = lower_cyrillic_to_upper_roman_dictionary_keys[i + 1];
+    let second_lower_roman_letter = (lower_cyrillic_to_upper_roman_dictionary[lower_cyrillic_to_upper_roman_dictionary_keys[i + 1]] === "") ? "없음" : lower_cyrillic_to_upper_roman_dictionary[lower_cyrillic_to_upper_roman_dictionary_keys[i + 1]];
+
     const td1 = tr.insertCell(0);
     const td2 = tr.insertCell(1);
     const td3 = tr.insertCell(2);
     const td4 = tr.insertCell(3);
-    const td5 = tr.insertCell(4);
-    const td6 = tr.insertCell(5);
-    const td7 = tr.insertCell(6);
-    const td8 = tr.insertCell(7);
 
     td1.setAttribute("style", "text-align:center");
     td2.setAttribute("style", "text-align:center");
     td3.setAttribute("style", "text-align:center");
     td4.setAttribute("style", "text-align:center");
-    td5.setAttribute("style", "text-align:center");
-    td6.setAttribute("style", "text-align:center");
-    td7.setAttribute("style", "text-align:center");
-    td8.setAttribute("style", "text-align:center");
 
-    td1.innerText = upper_cyrillic_to_upper_roman_dictionary_keys[i];
-    td2.innerText = upper_cyrillic_to_upper_roman_dictionary[upper_cyrillic_to_upper_roman_dictionary_keys[i]];
-    td3.innerText = upper_cyrillic_to_upper_roman_dictionary_keys[i + 1];
-    td4.innerText = (upper_cyrillic_to_upper_roman_dictionary[upper_cyrillic_to_upper_roman_dictionary_keys[i + 1]] === "") ? "-" : upper_cyrillic_to_upper_roman_dictionary[upper_cyrillic_to_upper_roman_dictionary_keys[i + 1]];
-    td5.innerText = lower_cyrillic_to_upper_roman_dictionary_keys[i];
-    td6.innerText = lower_cyrillic_to_upper_roman_dictionary[lower_cyrillic_to_upper_roman_dictionary_keys[i]];
-    td7.innerText = lower_cyrillic_to_upper_roman_dictionary_keys[i + 1];
-    td8.innerText = (lower_cyrillic_to_upper_roman_dictionary[lower_cyrillic_to_upper_roman_dictionary_keys[i + 1]] === "") ? "-" : lower_cyrillic_to_upper_roman_dictionary[lower_cyrillic_to_upper_roman_dictionary_keys[i + 1]];
+    // 대문자
+    td1.innerText = first_upper_cyrillic_letter + " → " + first_upper_roman_letter;
+    td2.innerText = second_upper_cyrillic_letter + " → " + second_upper_roman_letter;
 
-    console.log(upper_cyrillic_to_upper_roman_dictionary_keys[i]);
+    // 소문자
+    td3.innerText = first_lower_cyrillic_letter + " → " + first_lower_roman_letter;
+    td4.innerText = second_lower_cyrillic_letter + " → " + second_lower_roman_letter;
 }
 
 // 로마자-키릴문자 변환
