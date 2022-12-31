@@ -1,13 +1,12 @@
-.privacy-policy-article {
-    padding-top: 26px; 
+.blog_list {
+    padding-left: 20px;
+}
+
+.article {
+    padding-top: 14px;
     padding-bottom: 12px;
 }
 
-.about-article {
-    padding-bottom: 12px;
-}
-
-.about-article-title {
-    padding-top: 12px; 
+.article_paragraph {
     padding-bottom: 12px;
 }

@@ -16,3 +16,16 @@ main {
 a {
     text-decoration-line: none;
 }
+
+.link_list li {
+    line-height: 1.8;
+}
+
+.link_list a {
+    color: black;
+}
+
+.link_list img {
+    width: 30px; 
+    padding-right: 10px;
+}
