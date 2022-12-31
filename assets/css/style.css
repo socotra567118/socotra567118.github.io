@@ -9,13 +9,10 @@ body {
 
 main {
     flex: 1;
+    padding-top: 40px; 
+    padding-bottom: 40px;
 }
 
 a {
     text-decoration-line: none;
-}
-
-.main-article {
-    padding-top: 40px; 
-    padding-bottom: 40px;
 }
