@@ -10,3 +10,20 @@
 .article_paragraph {
     padding-bottom: 12px;
 }
+
+.article_paragraph img {
+    vertical-align: middle;
+}
+
+.article_paragraph span {
+    vertical-align: middle;
+}
+
+.article_title {
+    color: black;
+}
+
+.programing_title {
+    width: 40px; 
+    margin-right: 12px
+}
