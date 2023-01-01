@@ -35,3 +35,12 @@
     width: 40px; 
     margin-right: 12px
 }
+
+/* 프로필 이미지 */
+.profile_image {
+    background-color: rgba(209, 236, 252, 0.8);
+    height: 100px;
+    width: 100px;
+    border-radius: 50px;
+    margin-bottom: 12px;
+}

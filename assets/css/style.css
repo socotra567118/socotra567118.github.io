@@ -29,3 +29,10 @@ a {
     width: 20px; 
     margin-right: 5px;
 }
+
+/* 준비중, 404 에러 페이지 */
+.preparing {
+    margin: 10px auto;
+    max-width: 600px;
+    text-align: center;
+  }
