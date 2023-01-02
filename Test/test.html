@@ -9,7 +9,7 @@ permalink: '/test'
         <div class="col-md-8">
             <article class="blog-post">
                 <h2 class="blog-post-title mb-1">Sample blog post</h2>
-                <p class="blog-post-meta">2023년 1월 2일 <a href="#">Mark</a></p>
+                <p class="blog-post-meta">2023년 1월 2일</p>
     
                 <p>This blog post shows a few different types of content that’s supported and styled with Bootstrap. Basic typography, lists, tables, images, code, and more are all supported as expected.</p>
                 <hr>
@@ -121,10 +121,11 @@ permalink: '/test'
                 </ul>
                 <p>This is some additional paragraph placeholder content. It's a slightly shorter version of the other highly repetitive body text used throughout.</p>
             </article>
-    
-            <nav class="blog-pagination" aria-label="Pagination">
-                <a class="btn btn-outline-primary rounded-pill" href="#">Older</a>
-                <a class="btn btn-outline-secondary rounded-pill disabled">Newer</a>
+            
+            <!-- 게시물 하단 포스트 이동 네비게이션 -->
+            <nav class="blog-pagination" aria-label="Pagination" style="float: right;">
+                <a class="btn btn-outline-primary rounded-pill" href="#">이전 글</a>
+                <a class="btn btn-outline-secondary rounded-pill disabled">다음 글</a>
             </nav>
     
         </div>

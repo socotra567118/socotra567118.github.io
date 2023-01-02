@@ -35,4 +35,18 @@ a {
     margin: 10px auto;
     max-width: 600px;
     text-align: center;
-  }
+}
+
+/* 링크 스타일 */
+.link_style a {
+    color: black;
+}
+
+.link_style i {
+    color: black;
+}
+
+/* 개인정보 처리방침 링크 스타일 */
+.privacy_link_style a {
+    color: rgb(70, 70, 200);
+}
