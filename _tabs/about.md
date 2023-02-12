@@ -38,6 +38,3 @@ Republic of Korea 🇰🇷
 
 ### 통신판매업 신고번호
 2022-서울양천-0270
-
-### 개인정보 처리방침
-<a href="pages/pravacy_policy.html">개인정보 처리방침 보러가기</a>
