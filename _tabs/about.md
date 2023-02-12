@@ -38,9 +38,3 @@ Republic of Korea 🇰🇷
 
 ### 통신판매업 신고번호
 2022-서울양천-0270
-
-### 개인정보 처리방침
-<a href="/privacy_policy" style="color: black;">개인정보 처리방침 보러가기</a>
-
-### 사용 라이브러리 목록
-<a href="#" style="color: black;">사용 라이브러리 확인하기</a>
