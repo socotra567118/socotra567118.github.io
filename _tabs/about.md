@@ -40,4 +40,4 @@ Republic of Korea 🇰🇷
 2022-서울양천-0270
 
 ### 개인정보 처리방침
-<a href="https://socotra567118.github.com/privacy_policy">개인정보 처리방침 보러가기</a>
+<a href="https://socotra567118.github.io/privacy_policy">개인정보 처리방침 보러가기</a>
