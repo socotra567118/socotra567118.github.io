@@ -12,7 +12,7 @@ order: 4
 Republic of Korea 🇰🇷
 
 ### <i class="fa-solid fa-graduation-cap fa-fw me-2"></i> Education
-<a href="https://www.seoultech.ac.kr/"><img class="img-fluid" src="../assets/img/profile/seoultech.svg" style="width: 150px;"></a>
+<a href="https://www.seoultech.ac.kr/index.jsp"><img class="img-fluid" src="../assets/img/profile/seoultech.svg" style="width: 150px;"></a>
 <p>
   Seoul National University of Science and Technology
   <br>
