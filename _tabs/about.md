@@ -40,4 +40,4 @@ Republic of Korea 🇰🇷
 2022-서울양천-0270
 
 ### 개인정보 처리방침
-<a href="../pages/pravacy_policy.html">개인정보 처리방침 보러가기</a>
+<a href="pages/pravacy_policy.html">개인정보 처리방침 보러가기</a>
