@@ -5,7 +5,7 @@ categories: [Others, Others Tutorial]
 tags: [Others, Markdown, HTML]
 ---
 
-먼저, 아래의 HTML 코드를 삽입한다.
+아래의 HTML 코드를 삽입한다.
 
 ```html
 <script type="text/x-mathjax-config">
