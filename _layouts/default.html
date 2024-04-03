@@ -18,6 +18,10 @@ layout: compress
 
   {% include head.html %}
 
+  {% if page.use_math %}
+    {% include mathjax_support.html %}
+  {% endif %}
+
   <body data-spy="scroll" data-target="#toc" data-topbar-visible="true">
 
     {% include sidebar.html %}
