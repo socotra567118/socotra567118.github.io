@@ -33,11 +33,6 @@ Republic of Korea 🇰🇷
 <a href="https://github.com/socotra567118">socotra567118</a>
 
 # Others
-### 사업자 등록번호
-729-42-00829
-
-### 통신판매업 신고번호
-2022-서울양천-0270
 
 ### 개인정보 처리방침
 <a href="https://socotra567118.github.io/privacy_policy">개인정보 처리방침 보러가기</a>
