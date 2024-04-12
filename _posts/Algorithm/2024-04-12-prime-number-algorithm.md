@@ -6,7 +6,7 @@ tags: [Algorithm, Others, Python]
 published: false
 ---
 
-[<b>소수</b>](https://ko.wikipedia.org/wiki/소수_(수론))란 **2보다 큰 자연수 중에서 1과 자기 자신을 말고는 약수가 없는 자연수**이다.
+[<b>소수</b>](https://ko.wikipedia.org/wiki/소수_(수론))
 
 ## 소수 판정 알고리즘 1
 
