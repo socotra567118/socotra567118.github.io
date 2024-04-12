@@ -7,12 +7,12 @@
   .highlight .hll { background-color: #f6f6f6; }
   .highlight .c { color: #656e77; font-style: italic; } /* Comment */
   .highlight .err { color: #a61717; background-color: #e3d2d2; } /* Error */
-  .highlight .k { color: #015692; font-weight: bold; } /* Keyword */
-  .highlight .o { color: #2f2f2f; font-weight: bold; } /* Operator */
+  .highlight .k { color: #015692; } /* Keyword */
+  .highlight .o { color: #2f2f2f; } /* Operator */
   .highlight .cm { color: #999988; font-style: italic; } /* Comment.Multiline */                    // 여기
-  .highlight .cp { color: #999999; font-weight: bold; font-style: italic; } /* Comment.Preproc */   // 여기
+  .highlight .cp { color: #999999; font-style: italic; } /* Comment.Preproc */   // 여기
   .highlight .c1 { color: #999988; font-style: italic; } /* Comment.Single */                       // 여기
-  .highlight .cs { color: #999999; font-weight: bold; font-style: italic; } /* Comment.Special */   // 여기
+  .highlight .cs { color: #999999; font-style: italic; } /* Comment.Special */   // 여기
   .highlight .gd { color: #d01040; background-color: #ffdddd; } /* Generic.Deleted */               // 여기
   .highlight .ge { color: #000000; font-style: italic; } /* Generic.Emph */                         // 여기
   .highlight .gr { color: #aa0000; } /* Generic.Error */                                            // 여기
@@ -26,24 +26,24 @@
   .highlight .kc { color: #015692; } /* Keyword.Constant */
   .highlight .kd { color: #015692; } /* Keyword.Declaration */
   .highlight .kn { color: #015692; } /* Keyword.Namespace */
-  .highlight .kp { color: #015692; } /* Keyword.Pseudo */
+  .highlight .kp { color: #015692;  } /* Keyword.Pseudo */
   .highlight .kr { color: #000000; } /* Keyword.Reserved */        // 여기
   .highlight .kt { color: #b75501; } /* Keyword.Type */
   .highlight .m { color: #b75501; } /* Literal.Number */
   .highlight .s { color: #54790d; } /* Literal.String */
   .highlight .na { color: #015692; } /* Name.Attribute */
   .highlight .nb { color: #b75501; } /* Name.Builtin */
-  .highlight .nc { color: #015692; font-weight: bold; } /* Name.Class */
+  .highlight .nc { color: #b75501; } /* Name.Class */
   .highlight .no { color: #008080; } /* Name.Constant */                            // 여기
-  .highlight .nd { color: #3c5d5d; font-weight: bold; } /* Name.Decorator */        // 여기
+  .highlight .nd { color: #3c5d5d; } /* Name.Decorator */        // 여기
   .highlight .ni { color: #800080; } /* Name.Entity */                              // 여기
-  .highlight .ne { color: #990000; font-weight: bold; } /* Name.Exception */        // 여기
-  .highlight .nf { color: #015692; font-weight: bold; } /* Name.Function */
-  .highlight .nl { color: #990000; font-weight: bold; } /* Name.Label */            // 여기
+  .highlight .ne { color: #990000; } /* Name.Exception */        // 여기
+  .highlight .nf { color: #b75501; } /* Name.Function */
+  .highlight .nl { color: #990000; } /* Name.Label */            // 여기
   .highlight .nn { color: #b75501; } /* Name.Namespace */
   .highlight .nt { color: #2f2f2f; } /* Name.Tag */
   .highlight .nv { color: #54790d; } /* Name.Variable */
-  .highlight .ow { color: #000000; font-weight: bold; } /* Operator.Word */         // 여기
+  .highlight .ow { color: #000000; } /* Operator.Word */         // 여기
   .highlight .w { color: #bbbbbb; } /* Text.Whitespace */                           // 여기
   .highlight .mf { color: #b75501; } /* Literal.Number.Float */
   .highlight .mh { color: #b75501; } /* Literal.Number.Hex */
