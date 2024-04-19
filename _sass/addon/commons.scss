@@ -1733,3 +1733,20 @@ $sidebar-display: "sidebar-display";
     } /* .sidebar-bottom */
   } /* #sidebar */
 } /* min-width: 1650px */
+
+.output-box {
+  font-size: 0.9em;
+  padding: 1em;
+  margin: 1em 0;
+  border-radius: 8px;
+  font-family: monospace;
+  color: #333; /* Dark text for light background */
+  background-color: #f6f6f6; /* Light background for light mode */
+}
+
+@media (prefers-color-scheme: dark) {
+  .output-box {
+    color: #ccc; /* Light text for dark background */
+    background-color: #1c1b1b; /* Dark background for dark mode */
+  }
+}

@@ -13,7 +13,7 @@
   --clipboard-checked-color: #2bcc2b;
   --filepath-text-color: #ffffff;
 
-  pre { color: #bfbfbf; } /* override Bootstrap */
+  pre { color: #b5bd68; } /* override Bootstrap */
 
   .highlight {
     .gp { color: #818c96; }
@@ -31,7 +31,7 @@
   .highlight .o { color: #ffffff; } /* Operator */
   .highlight .p { color: #cccccc; } /* Punctuation */
   .highlight .cm { color: #75715e; } /* Comment.Multiline */  // 여기
-  .highlight .cp { color: #75715e; } /* Comment.Preproc */    // 여기
+  .highlight .cp { color: #88aece; } /* Comment.Preproc */    // C의 헤더 파일
   .highlight .c1 { color: #75715e; } /* Comment.Single */     // 여기
   .highlight .cs { color: #75715e; } /* Comment.Special */    // 여기
   .highlight .ge { color: inherit; font-style: italic; } /* Generic.Emph */

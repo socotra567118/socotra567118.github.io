@@ -1,5 +1,5 @@
 ---
-title: 소수 관련 알고리즘
+title: 소수 판정 알고리즘
 date: 2024-04-12 18:36:00 +0900
 categories: [Algorithm, Others]
 tags: [Algorithm, Others, Python]
