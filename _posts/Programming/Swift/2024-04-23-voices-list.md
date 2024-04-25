@@ -1,8 +1,8 @@
 ---
-title: iOS TTS 목소리 목록
+title: Swift AVFoundation TTS 목소리 목록
 date: 2024-04-23 03:17:00 +0900
-categories: [iOS, TTS]
-tags: [iOS, TTS, AVFoundation]
+categories: [Swift, TTS]
+tags: [Swift, iOS, TTS, AVFoundation]
 ---
 
 iOS, macOS의 AVFoundation TTS 목소리 목록이다. 
