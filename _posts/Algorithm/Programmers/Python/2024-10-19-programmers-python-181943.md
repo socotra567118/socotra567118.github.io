@@ -1,6 +1,6 @@
 ---
 title: 프로그래머스 - 181943번 문자열 겹쳐쓰기
-date: 2024-10-18 18:52:00 +0900
+date: 2024-10-19 18:52:00 +0900
 categories: [Algorithm, Python]
 tags: [Algorithm, Python, Programmers]
 ---

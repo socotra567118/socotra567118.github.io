@@ -1,6 +1,6 @@
 ---
 title: 프로그래머스 - 181944번 홀짝 구분하기
-date: 2024-10-18 18:30:00 +0900
+date: 2024-10-19 18:30:00 +0900
 categories: [Algorithm, Python]
 tags: [Algorithm, Python, Programmers]
 ---

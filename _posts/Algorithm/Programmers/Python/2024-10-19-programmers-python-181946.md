@@ -1,6 +1,6 @@
 ---
 title: 프로그래머스 - 181946번 문자열 붙여서 출력하기
-date: 2024-10-18 18:13:00 +0900
+date: 2024-10-19 18:13:00 +0900
 categories: [Algorithm, Python]
 tags: [Algorithm, Python, Programmers]
 ---
