@@ -1,0 +1,45 @@
+---
+title: 프로그래머스 - 181936번 공배수
+date: 2024-10-21 09:20:00 +0900
+categories: [Algorithm, Python]
+tags: [Algorithm, Python, Programmers]
+---
+
+## **문제 설명**
+
+정수 `number`와 `n`, `m`이 주어집니다. `number`가 `n`의 배수이면서 `m`의 배수이면 1을 아니라면 0을 return하도록 solution 함수를 완성해주세요.
+
+[181937번 n의 배수](https://school.programmers.co.kr/learn/courses/30/lessons/181936)
+
+## **제한 사항**
+- 10 ≤ `num` ≤ 100
+- 2 ≤ `n`, `m` ≤ 10
+
+## **입출력 예시**
+
+| num| n | m | result |
+|:---:|:---:|:---:|:---:|
+|60|2|3|1|
+|55|10|5|0|
+
+## **입출력 예 설명**
+
+### 입출력 예 #1
+
+60은 2의 배수이면서 3의 배수이기 때문에 1을 return합니다.
+
+### 입출력 예 #2
+
+55는 5의 배수이지만 10의 배수가 아니기 때문에 0을 return합니다.
+
+## **문제 해결 전략**
+
+### 1. 주요 포인트
+- `num`을 `n` 또는 `m`으로 나누었을 때, `n` 또는 `m`의 배수이면 나머지가 0, 배수가 아니면 0이 아니다.
+
+## **코드 구현**
+
+```python
+def solution(number, n, m):
+    return 1 if number % n == 0 and number % m == 0 else 0
+```
