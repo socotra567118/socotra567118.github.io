@@ -1,0 +1,61 @@
+---
+title: 프로그래머스 - 181922번 수열과 구간 쿼리 4
+date: 2024-10-24 15:12:00 +0900
+categories: [Algorithm, Python]
+tags: [Algorithm, Python, Programmers]
+---
+
+## **문제 설명**
+
+정수 배열 `arr`와 2차원 정수 배열 `queries`이 주어집니다. `queries`의 원소는 각각 하나의 `query`를 나타내며, `[s, e, k]` 꼴입니다.
+
+각 query마다 순서대로 `s` ≤ `i` ≤ `e`인 모든 `i`에 대해 `i`가 `k`의 배수이면 `arr[i]`에 1을 더합니다.
+
+위 규칙에 따라 `queries`를 처리한 이후의 `arr`를 return 하는 solution 함수를 완성해 주세요.
+
+[181922번 수열과 구간 쿼리 4](https://school.programmers.co.kr/learn/courses/30/lessons/181922)
+
+## **제한 사항**
+- 1 ≤ `arr`의 길이 ≤ 1,000
+    - 0 ≤ `arr`의 원소 ≤ 1,000,000
+- 1 ≤ `queries`의 길이 ≤ 1,000
+    - 0 ≤ `s` ≤ `e` < `arr`의 길이
+    - 0 ≤ `k` ≤ 5
+
+## **입출력 예시**
+
+### 예시 1
+
+| arr| queries | result |
+|:---:|:---:|:---:|
+|[0, 1, 2, 4, 3]|[[0, 4, 1],[0, 3, 2],[0, 3, 3]]|[3, 2, 4, 6, 4]|
+
+## **입출력 예 설명**
+
+### 입출력 예 #1
+
+* 각 쿼리에 따라 arr가 다음과 같이 변합니다.
+
+| arr|
+|:---:|
+|[0, 1, 2, 4, 3]|
+|[1, 2, 3, 5, 4]|
+|[2, 2, 4, 5, 4]|
+|[3, 2, 4, 6, 4]|
+
+* 따라서 [3, 2, 4, 6, 4]를 return 합니다.
+
+## **코드 구현**
+
+```python
+def solution(arr, queries):
+    for query in queries:
+        for i in range(query[0], query[1] + 1):
+            if i % query[2] == 0:
+                arr[i] += 1
+        
+    return arr
+```
+
+### 개선할 점
+- `if i % query[2] == 0:`에서 만약, `query[2]`가 0이면, 에러가 발생할 수도 있다.
