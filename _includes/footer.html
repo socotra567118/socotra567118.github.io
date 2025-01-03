@@ -1,8 +1,6 @@
 <div class="page__footer-follow">
   <ul class="social-icons">
-    {% if site.data.ui-text[site.locale].follow_label %}
-      <li><strong>{{ site.data.ui-text[site.locale].follow_label }}</strong></li>
-    {% endif %}
+    <li><i class="fas fa-fw fa-map-marker-alt" aria-hidden="true"></i><b> Seoul, Korea</b></li>
 
     {% if site.footer.links %}
       {% for link in site.footer.links %}
@@ -11,10 +9,6 @@
         {% endif %}
       {% endfor %}
     {% endif %}
-
-    {% unless site.atom_feed.hide %}
-      <li><a href="{% if site.atom_feed.path %}{{ site.atom_feed.path }}{% else %}{{ '/feed.xml' | relative_url }}{% endif %}"><i class="fas fa-fw fa-rss-square" aria-hidden="true"></i> {{ site.data.ui-text[site.locale].feed_label | default: "Feed" }}</a></li>
-    {% endunless %}
   </ul>
 </div>
 
