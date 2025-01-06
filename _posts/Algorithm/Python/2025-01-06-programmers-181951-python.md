@@ -1,0 +1,38 @@
+---
+layout: single
+title: Python - 프로그래머스 181951번 a와 b 출력하기
+categories: [Algorithm]
+tags: [Python, Programmers]
+---
+
+## 문제 설명
+[프로그래머스 181951번 a와 b 출력하기](https://school.programmers.co.kr/learn/courses/30/lessons/181951?language=python3)
+
+정수 `a`와 `b`가 주어집니다. 각 수를 입력받아 입출력 예와 같은 형식으로 출력하는 코드를 작성해 보세요.
+
+## 제한 사항
+- -100,000 ≤ `a`, `b` ≤ 100,000
+
+## 입출력 예시
+
+### 예시 1
+
+#### 입력 1
+
+```plaintext
+4 5
+```
+
+#### 출력 1
+
+```plaintext
+a = 4
+b = 5
+```
+
+## 코드 구현
+
+```python
+a, b = map(int, input().strip().split(' '))
+print(f"a = {a}\nb = {b}")
+```
